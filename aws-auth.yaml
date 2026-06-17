@@ -6,6 +6,11 @@ data:
       - system:bootstrappers
       - system:nodes
       username: system:node:{{EC2PrivateDNSName}}
+  mapUsers: |
+    - groups:
+      - roboshop-trainee
+      userarn: arn:aws:iam::793770371113:user/keke
+      username: keke
 kind: ConfigMap
 metadata:
   creationTimestamp: "2026-06-17T19:52:30Z"
