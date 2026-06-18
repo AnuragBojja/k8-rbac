@@ -12,9 +12,11 @@ data:
       userarn: arn:aws:iam::793770371113:user/keke
       username: keke
     - groups:
-      - roboshop-admin
+      - roboshop-admin-access-all-v1-g
+      - roboshop-admin-access-clusterlevel-pv-g
       userarn: arn:aws:iam::793770371113:user/anurag
       username: anurag
+    
 kind: ConfigMap
 metadata:
   name: aws-auth
